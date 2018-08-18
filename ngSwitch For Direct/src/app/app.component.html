@@ -1,0 +1,15 @@
+<p [appBackground]="'red'" [defaultColor]="'transparent'">{{text}}</p>
+
+<ul>
+  <li *ngFor="let item of items" (click)="onClick(item)">
+    {{item}}
+  </li>
+</ul>
+
+<!--можно выводить табы-->
+<div [ngSwitch]="current">
+  <p *ngSwitchCase="1">1</p>
+  <p *ngSwitchCase="2">2</p>
+  <p *ngSwitchCase="3">3</p>
+  <p *ngSwitchDefault>default</p>
+</div>
