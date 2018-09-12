@@ -1,0 +1,5 @@
+<hr>
+<div class="list-group-item" *ngFor="let todo of todos; let i = index" [ngClass]="{'completed': todo.completed}">
+  <input type="checkbox" [(ngModel)]="todo.completed"> {{todo.name}}
+  <button (click)="itemService.deleteTodo(i)">Удалить</button>
+</div>
