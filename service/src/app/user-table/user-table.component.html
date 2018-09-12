@@ -1,0 +1,14 @@
+<p>
+  Таблица пользователей:
+</p>
+
+<table>
+  <tr>
+    <th>Фамилия:</th>
+    <th>Имя:</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.lastName}}</td>
+    <td>{{user.firstName}}</td>
+  </tr>
+</table>

@@ -1,0 +1,11 @@
+<p>
+  Список пользователей:
+</p>
+
+<ul>
+  <li *ngFor="let user of users">
+    {{user.firstName}} {{user.lastName}}
+  </li>
+</ul>
+<h3>{{usersService.clickCount}}</h3>
+<button (click)="usersService.increase()">Клик!</button>
