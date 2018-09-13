@@ -1,0 +1,8 @@
+<h2>Информация о машине {{name}} ({{id}})</h2>
+<p>{{year}}</p>
+<p>{{color}}</p>
+<p>{{hash}}</p>
+
+<!--для динамического-->
+<h4><a [routerLink]="['/cars', 8, 'Mazda']">Открыть Mazda</a></h4>
+<h4 (click)="OpenMazdaPage()">Открыть Mazda2</h4>
